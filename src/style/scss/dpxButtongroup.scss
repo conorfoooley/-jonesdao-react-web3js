@@ -1,0 +1,16 @@
+.dpx-buttongroup {
+    background-color: #101214;
+    border-radius: 8px;
+}
+.dpx-buttongroup-div {
+    background-color: transparent;
+    border-radius: 6px;
+}
+.dpx-buttongroup-div:hover {
+    cursor: pointer;
+}
+.dpx-buttongroup-div.active {
+    background: #262829;
+    color: white !important;
+    border: transparent;
+}

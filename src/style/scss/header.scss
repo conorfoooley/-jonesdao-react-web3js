@@ -1,0 +1,124 @@
+.header {
+    width: 100%;
+    height: 65px;
+    opacity: 0.9;
+    padding-left: 6.1rem;
+    padding-right: 6.1rem;
+    display: flex;
+    align-items: center;
+    .active{
+        color: white;
+    }
+}
+.header-div-first {
+    display: flex;
+    gap: 5rem;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    --tw-backdrop-blur: blur(10px);
+    backdrop-filter: var(--tw-backdrop-blur);
+    --tw-bg-opacity: 0.2;
+    background-color: rgb(20 22 23/var(--tw-bg-opacity));
+
+}
+.image-hat {
+    width: 36px;
+}
+.image-hat:hover {
+    cursor: pointer;
+}
+.btn-group button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    color: #848486;
+    font-weight: 700;
+}
+.btn-group button:hover {
+   color: white;
+}
+.btn-group button:focus {
+    color: white;
+ }
+.btn-group {
+    gap: 40px;
+}
+.header-div-second {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    align-items: center;
+}
+.hat-bg {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #262829;
+    border-radius: 8px;
+    justify-content: center;
+}
+.second-hat {
+    width: 25px;
+}
+.hat-bg:hover {
+    cursor: pointer;
+    background-color: rgb(28 30 31);
+}
+.btn-connect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    position: relative;
+    padding: 7px;
+    $border: 1px;
+    color: black;
+    background-clip: padding-box; 
+    border: solid $border transparent; 
+    border-radius: 9px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1;
+        margin: -$border;
+        border-radius: inherit;
+        background: linear-gradient(65deg, #de6b38 25%, #7163bb 85%,);
+    }
+
+    background-color: #141617;
+}
+
+.btn-connect:hover {
+    &:before {
+        background: linear-gradient(65deg, #7163bb 25%, #de6b38 85%);
+    }
+    background-color: rgb(38, 40, 41);
+    .btn-connect-div {
+        background-image: linear-gradient(65deg,#7163bb 25%,#de6b38 85%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.btn-connect-div {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
+    background-image: linear-gradient(65deg, #de6b38 25%, #7163bb 85%,);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1180px){
+    .header{
+        padding-left: 3rem;
+    }
+}
+
+

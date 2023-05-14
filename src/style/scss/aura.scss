@@ -1,0 +1,305 @@
+body{
+    overflow-x: hidden;
+}
+.aura{
+    position: relative;
+    color: white;
+    .full-width {
+        background-color: #141617;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        .grid-linear1 {
+            background-image: radial-gradient(41.29% 41.29% at 50% 51.77%, rgb(202, 94, 50) 15.1%, rgba(255, 131, 32, 0) 94.73%);
+            opacity: .25;
+            width: 105vw;
+            height: 150vh;
+            top: 10%;
+            left: -60%;
+            position: absolute;
+            pointer-events: none;
+        }
+        .grid-linear2 {
+            background-image: radial-gradient(46.13% 46.13% at 50% 51.77%, rgb(147, 81, 118) 16.66%, rgba(98, 59, 81, 0) 97.39%);
+            opacity: .3;
+            width: 105vw;
+            height: 150vh;
+            top: -10%;
+            left: -65%;
+            position: absolute;
+            pointer-events: none;
+        }
+        .grid-linear3 {
+            background-image: radial-gradient(46.13% 46.13% at 50% 51.77%, rgb(42, 40, 102) 16.66%, rgb(10, 11, 60) 45.31%, rgba(10, 11, 60, 0) 95.83%);
+            opacity: .4;
+            width: 105vw;
+            height: 150vh;
+            top: -25%;
+            left: -60%;
+            position: absolute;
+            pointer-events: none;
+        }
+    }
+    .aura-child{
+        overflow: hidden;
+    }
+    .bg-dark-custom {
+        background-color: #111214;
+    }
+    .bg-black-custom {
+        background-color: #1b1d1f;
+    }
+    .bg-danger-custom {
+        background-color: #101213cc;
+        background-image: linear-gradient(to top left,var(--tw-gradient-stops));
+        --tw-gradient-to: #101213cc;
+        --tw-gradient-from: #3a2a47bf;
+        --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+    }
+    .bg-info-custom {
+        background-color: #101213cc;
+        --tw-gradient-from: #1d2151cc;
+        --tw-gradient-to: #101213cc;
+        --tw-gradient-stops: var(--tw-gradient-from),transparent,var(--tw-gradient-to);
+        background-image: linear-gradient(to top left,var(--tw-gradient-stops));
+    }
+    .bg-primary-custom {
+        background-color: #101213cc;
+        --tw-gradient-from: rgba(240,68,56,.3);
+        --tw-gradient-to: #101213cc;
+        --tw-gradient-stops: var(--tw-gradient-from),transparent,var(--tw-gradient-to);
+        background-image: linear-gradient(to top left,var(--tw-gradient-stops));
+    }
+    .fs-5-custom {
+        font-size: 13px !important;
+    }
+    .fs-6-custom {
+        font-size: 11px !important;
+    }
+    .bg-primary-gradient {
+        background-image: linear-gradient(65deg,#7163bb 25%,#de6b38 85%);
+    }
+    .bg-primary{
+        background-color: #847c7c !important;
+    }
+    .bg-info-gradient {
+        --tw-gradient-from: #3f7b8e;
+        --tw-gradient-to: #13323c;
+        --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+        background-image: linear-gradient(to right,var(--tw-gradient-stops));
+    }
+    .bg-gray-800 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(20 22 23/var(--tw-bg-opacity));
+    }
+    .bg-clip-text {
+        background-clip: text;
+    }
+    .text-transparent {
+        color: transparent;
+    }
+    
+    .bg-purple {
+        background-color: #34253f;
+        color: white;
+    }
+    .token-input {
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        font-size: 25px;
+        color: white;
+    }
+    .token-input:focus {
+        outline: none;
+    }
+    
+    .text-gray {
+        color: rgb(196 196 196/var(--tw-text-opacity));
+    }
+    .rounded-full {
+        border-radius: 20px;
+    }
+    .card {
+        // padding: unset !important;
+        border-radius: 10px !important;
+    }
+    .auraImg {
+        inset: 0px; 
+        box-sizing: border-box; 
+        padding: 0px; 
+        border: none; 
+        // margin: auto; 
+        display: block; 
+        width: 42px; 
+        height: 42px; 
+    }
+    .aura-img {
+        inset: 0px; 
+        box-sizing: border-box; 
+        padding: 0px; 
+        border: none; 
+        // margin: auto; 
+        display: block; 
+        width: 26px; 
+        height: 26px; 
+    }
+    .token-input-div {
+        position: relative;
+    }
+    .aura-img-div {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+    .balance-btn-div {
+        position: relative;
+        $border: 1px;
+        color: black;
+        background-clip: padding-box; 
+        border: solid $border transparent; 
+        background-color: #262829;
+        padding: 0px 10px;
+        border-radius: 20px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: -1;
+            margin: -$border;
+            border-radius: inherit;
+            background: linear-gradient(65deg, #de6b38 25%, #7163bb 85%,);
+        }
+    }
+    
+    .balance-btn {
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(65deg, #de6b38 25%, #7163bb 85%,);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .balance-btn:hover {
+        cursor: pointer;
+    }
+    .connect-wallet-btn{
+        height: 60px;
+        border-radius:10px;
+    }
+    .connect-wallet-btn:hover{
+        cursor: pointer;
+        background-image: linear-gradient(65deg,#de6b38 25%,#7163bb 85%);
+    }
+    .jaura-Img {
+        inset: 0px; 
+        box-sizing: border-box; 
+        padding: 0px; 
+        border: none; 
+        display: block; 
+        width: 41px; 
+        height: 41px; 
+    }
+    .jaura-Img {
+        inset: 0px; 
+        box-sizing: border-box; 
+        padding: 0px; 
+        border: none; 
+        display: block; 
+        width: 41px; 
+        height: 41px; 
+    }
+    .jaura-Img-small {
+        inset: 0px; 
+        box-sizing: border-box; 
+        padding: 0px; 
+        border: none; 
+        display: block; 
+        width: 25px; 
+        height: 25px; 
+    }
+    .btn-group-aura-custom button {
+        font-weight: 700;
+        background-color: #111214;
+        border: none !important;
+        padding-bottom: 5px;
+    }
+    .btn-group-aura-custom button:hover {
+        background: transparent;
+        border: transparent;
+    }
+    .btn-group-aura-custom button.active {
+        color: white !important;
+        border-bottom: 2px solid white !important;
+    }
+    .btn-info-custom{
+        border: none;
+        background-color: #181a1a !important;
+    }
+    .btn-info-custom:hover{
+        color: #de6b38 !important;
+    }
+    .btn-info-custom:focus{
+        color: #de6b38 !important;
+    }
+    .btn-info-custom.active{
+        background-color: #262829 !important;
+        color: #de6b38 !important;
+    }
+    .learn-txt {
+        color: white;
+        text-decoration: none;
+    }
+    .learn-txt:hover {
+        color: #de6b38 !important;
+    }
+    .learn-txt-gray{
+        color: #7d7575 !important;
+        text-decoration: underline !important;
+    }
+    .learn-txt-gray:hover {
+        color: #de6b38 !important;
+    }
+    .about-text-div {
+        color: #b8b8b9 !important;
+    }
+    .wjAURA-div{
+        justify-content: flex-end;
+    }
+    .number-text:hover{
+        cursor: pointer;
+    }
+    .wallet-address-icon{
+        padding: 0px 5px 3px;
+    }
+    .wallet-address-icon:hover{
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: #262829;
+    }
+    .copy-text{
+        position: absolute;
+        top: 0;
+        left: 120%;
+    }
+    a{
+        color: white !important;
+        text-decoration: none !important;
+    }
+}
+
+@media (max-width: 990px){
+    .auraBanner-parent{
+        display: none !important;
+    }
+}
+@media (max-width: 768px){
+    .wjAURA-div-parent{
+        border-top: 0.5px solid #262829;
+    }
+    .wjAURA-div{
+        justify-content: flex-start !important;
+    }
+}
