@@ -32,10 +32,8 @@ const Aura = () => {
                     <a target="_blank" rel="noreferrer" className="ms-1 learn-txt-gray" href="https://etherscan.io/address/0x198d7387Fa97A73F05b8578CdEFf8F2A1f34Cd1F">
                     0x198d7387Fa97A73F05b8578CdEFf8F2A1f34Cd1F
                     </a>
-                    <div style={{position:'relative'}}>
-                        <div className='ms-2 justify-content-center align-items-center wallet-address-icon'>
-                        </div>
-                        {/* {hoverFlag?<div className='copy-text px-2 pb-1 rounded-3 bg-dark-custom'>copy</div>:""} */}
+                    <div className='ms-2 wallet-address-icon' onClick={() => { console.log("previous", clipboardimg); setClipboardimg(clipboardimg + 1); console.log("next", clipboardimg)}}>
+                        <MdOutlineContentCopy/>
                     </div>
                 </div>
             </div>

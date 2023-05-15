@@ -1,0 +1,144 @@
+
+.modal-dialog {
+    // max-width: 50% !important;
+    max-width: 700px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal-content {
+    background-color: transparent !important;
+}
+.modal-body {
+    background-color: #101213;
+    border-radius: 10px;
+    border: 1px solid #232526;
+    color: white;
+}
+.wallet-images {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.connect-wallet-div {
+    
+    padding: 7px;
+    border-radius: 7px;
+}
+
+.connect-wallet-div:hover {
+    background-color: #262829;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.wallet-content {
+    font-size: 14px;
+}
+
+.get-a-wallet {
+    background-color: #de6b38;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 3px 15px 3px 15px;
+}
+.get-a-wallet:hover {
+    cursor: pointer;
+    padding: 4px 17px 4px 17px;
+}
+
+.learn-more {
+    font-size: 15px;
+    font-weight: 500;
+    color: #de6b38;
+}
+.learn-more:hover {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.wallet-info {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+.qr-img {
+    width: 370px;
+    height: 370px;
+}
+
+.wallet-connect-open {
+    background-color: #222425;
+    color: #de6b38;
+    border-radius: 15px;
+    padding: 4px 14px;
+    margin-right: -40px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.wallet-connect-open:hover {
+    cursor: pointer;
+}
+
+.scan-phone {
+    font-weight: 900;
+}
+.wallet-modal-needed {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.connect-wallet-active {
+    background-color: #de6b38;
+}
+.connect-wallet-active:hover {
+    background-color: #de6b38;
+}
+
+.wallet-list {
+    margin-top: -15px;
+    margin-bottom: -15px;
+    border-right: 1px solid #232526;;
+}
+
+.x-mark {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
+    background-color: #222425;
+    width: 30px;
+    height: 30px;
+}
+.x-mark:hover {
+    cursor: pointer;
+    font-size: 17px;
+    width: 32px;
+    height: 32px;
+    top: 14px;
+    right: 14px;
+}
+@media (max-width: 768px){
+    .wallet-content{
+        display: none !important;
+    }
+    .modal-dialog{
+        max-width: 368px !important;
+    }
+    .wallet-list {
+        margin-top: -15px;
+        margin-bottom: 0px;
+        border-right: none !important;
+    }
+}
+@media (max-width: 576px){
+    .modal-dialog{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+
+

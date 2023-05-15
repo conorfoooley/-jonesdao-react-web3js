@@ -1,12 +1,15 @@
-import React, { useContext } from "react";
-import JonesHat from '../style/images/jones-hat.svg';
-import '../style/scss/header.scss';
+import React, { useState, useContext } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AppContext } from '../Context/AppContext';
+import ModalComponent from "./ModalComponent";
+import JonesHat from '../style/images/jones-hat.svg';
+import '../style/scss/header.scss';
+
 
 export default function Header() {
     const {headerActive,setHeaderActive} = useContext(AppContext);
+    const [modalShow, setModalShow] = useState(false);
     return (
         <div className="sticky">
             <div className="header">
@@ -26,7 +29,7 @@ export default function Header() {
                         <img className="second-hat" src={JonesHat} alt=""></img>
                     </div>
                     <div>
-                        <button className="btn-connect">
+                        <button className="btn-connect" onClick={() => {setModalShow(true)}}>
                             <div >
                                 <span className="btn-connect-div">
                                     Connect
@@ -35,7 +38,7 @@ export default function Header() {
                         </button>
                     </div>
                 </div>
-        
+                <ModalComponent show={modalShow} onHide={() => setModalShow(false)}/>
             
             </div>
         </div>
